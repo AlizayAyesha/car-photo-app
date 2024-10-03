@@ -1,123 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive car Photo App</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-  <style>
-    body{
-        background-color: #000000;
-        color: #fff;
-    }
-    h2 {
-      font-size: 200px;
-      color: rgb(255, 0, 149);
-      font-family: Lobster, Monospace;
-    }
-
-    .thick-border {
-      border-color: rgb(255, 0, 238);
-      border-width: 10px;
-      border-style: solid;
-      border-radius: 50%;
-    }
-
-    .smaller-image {
-      width: 150px;
-      position: absolute;
-      top: 60px; /* Adjust as needed */
-      right: 10px; /* Adjust as needed */
-    }
-
-    @media (max-width: 768px) {
-        h2{
-            font-size: 50px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive car Photo App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-color: #000000;
+            color: #fff;
         }
-      .smaller-image {
-        width: 100px;
-        top: 1.5px;
-        right: 5px;
-      }
-    }
 
-    @media (max-width: 480px) {
-        h2{
-            font-size: 30px;
+        h2 {
+            font-size: 200px;
+            color: rgb(255, 0, 149);
+            font-family: Lobster, Monospace;
         }
-      .smaller-image {
-        width: 75px;
-        top: 1px;
-        right: 2px;
-      }
-    }
-  </style>
+
+        .thick-border {
+            border-color: rgb(255, 0, 238);
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 50%;
+        }
+
+        .smaller-image {
+            width: 150px;
+            position: absolute;
+            top: 60px;
+            /* Adjust as needed */
+            right: 10px;
+            /* Adjust as needed */
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 50px;
+            }
+
+            .smaller-image {
+                width: 100px;
+                top: 1.5px;
+                right: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 30px;
+            }
+
+            .smaller-image {
+                width: 75px;
+                top: 1px;
+                right: 2px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container-fluid">
-    <div class="row position-relative">
-      <div class="col-md-8">
-        <h2 class=" text-center">CarPhotoApp</h2>
-      </div>
-      <div class="col-md-4">
-        <a href="#"><img class="smaller-image thick-border" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShIHrisYZfCT0MBsr3XmV0eRZy3OGDDmGZqA&s" alt="A cute orange cat lying on its back."></a>
-      </div>
-    </div>
-    <div class="text-center my-4">
-      <img src="https://promptrr.io/wp-content/uploads/2023/07/D259E758-64F3-42D7-9B33-50D4523614FB.png" class="img-fluid" alt="Three kittens running towards the camera.">
-    </div>
-    <div class="row">
-      <div class="col-md-4 mb-2">
-        <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
-      </div>
-      <div class="col-md-4 mb-2">
-        <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
-      </div>
-      <div class="col-md-4 mb-2">
-        <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
-      </div>
-    </div>
-    <p>Things cars <span class="text-danger">love:</span></p>
-    <ul>
-      <li>high-speed racing</li>
-      <li>polished surfaces</li>
-      <li>frequent maintenance</li>
-    </ul>
-    <p>Top 3 things cars hate:</p>
-    <ol>
-      <li>rust</li>
-      <li>potholes</li>
-      <li>low-quality fuel</li>
-    </ol>
-    <form action="https://freecarphotoapp.com/submit-car-photo">
-        <div class="row">
-          <div class="col-md-6 mb-2">
-            <label><input type="radio" name="car-type"> Sedan</label>
-          </div>
-          <div class="col-md-6 mb-2">
-            <label><input type="radio" name="car-type"> SUV</label>
-          </div>
+    <div class="container-fluid">
+        <div class="row position-relative">
+            <div class="col-md-8">
+                <h2 class=" text-center">CarPhotoApp</h2>
+            </div>
+            <div class="col-md-4">
+                <a href="#"><img class="smaller-image thick-border"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShIHrisYZfCT0MBsr3XmV0eRZy3OGDDmGZqA&s"
+                        alt="A cute orange cat lying on its back."></a>
+            </div>
+        </div>
+        <div class="text-center my-4">
+            <img src="https://promptrr.io/wp-content/uploads/2023/07/D259E758-64F3-42D7-9B33-50D4523614FB.png"
+                class="img-fluid" alt="Three kittens running towards the camera.">
         </div>
         <div class="row">
-          <div class="col-md-4 mb-2">
-            <label><input type="checkbox" name="features"> Sunroof</label>
-          </div>
-          <div class="col-md-4 mb-2">
-            <label><input type="checkbox" name="features"> Leather Seats</label>
-          </div>
-          <div class="col-md-4 mb-2">
-            <label><input type="checkbox" name="features"> Navigation System</label>
-          </div>
+            <div class="col-md-4 mb-2">
+                <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+            </div>
+            <div class="col-md-4 mb-2">
+                <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+            </div>
+            <div class="col-md-4 mb-2">
+                <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+            </div>
         </div>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Car photo URL" required>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-paper-plane"></i> Submit</button>
-      </form>
+        <p>Things cars <span class="text-danger">love:</span></p>
+        <ul>
+            <li>high-speed racing</li>
+            <li>polished surfaces</li>
+            <li>frequent maintenance</li>
+        </ul>
+        <p>Top 3 things cars hate:</p>
+        <ol>
+            <li>rust</li>
+            <li>potholes</li>
+            <li>low-quality fuel</li>
+        </ol>
+        <form action="https://freecarphotoapp.com/submit-car-photo">
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <label><input type="radio" name="car-type"> Sedan</label>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <label><input type="radio" name="car-type"> SUV</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <label><input type="checkbox" name="features"> Sunroof</label>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <label><input type="checkbox" name="features"> Leather Seats</label>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <label><input type="checkbox" name="features"> Navigation System</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Car photo URL" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-paper-plane"></i> Submit</button>
+        </form>
+      
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-md-left">
+                        <p class="mb-0">
+                          &copy; 
+                          <script>
+                            document.write(new Date().getFullYear())
+                          </script> Alizay Yousufzai. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-  
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
-  </html>
+</body>
+
+</html>
