@@ -56,7 +56,13 @@
         font-size: 18px;
         font-weight: 500;
         padding: 10px;
-        transition: all 0.3s ease;
+        transition: transform .3s linear;
+      }
+
+      .btn:hover {
+        transform: scale(1.05);
+        filter: brightness(1.5);
+        color: #111;
       }
 
       .btn-block:hover {
@@ -74,17 +80,8 @@
       .btn-danger {
         background: linear-gradient(45deg, #ff3366, #ff0033);
       }
-
-      .btn-primary:hover {
-        background: #0056b3;
-      }
-
-      .btn-info:hover {
-        background: #00aaff;
-      }
-
       .btn-danger:hover {
-        background: #d9534f;
+        color: white;
       }
 
       /* Form Input Style */
